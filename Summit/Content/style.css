@@ -665,28 +665,53 @@ button:focus,
 /*-------------------
  * Form Style
  *-------------------*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
 
-.form-control {
-    height        : 46px;
-    padding       : 0 20px;
-    font-size     : 14px;
-    line-height   : 46px;
-    color         : #969595;
-    border        : 1px solid #f1f1f1;
-    border-radius : 0;
-    box-shadow    : none;
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
     }
+
+#img-upload {
+    width: 100%;
+}
+.form-control {
+    height: 46px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 46px;
+    color: #000;
+    border: 1px solid #f1f1f1;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+}
 
 .form-control.input-lg {
     height        : 60px;
     padding       : 0 20px;
     font-size     : 18px;
     line-height   : 60px;
-    color         : #969595;
+    color         : #000;
     border        : 1px solid #f1f1f1;
     border-radius : 0;
     box-shadow    : none;
     min-width     : 400px;
+    font-weight:normal;
     }
 
 .form-control:focus,
